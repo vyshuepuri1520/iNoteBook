@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-const Signup = () => {
+const Signup = (props) => {
   const [credentials, setCredentials] = useState({name:"",email:"",password:"",cpassword:""})
   let navigate = useNavigate();
   const handleSubmit=async (e)=>{
@@ -21,9 +21,10 @@ const Signup = () => {
     //Save the auth token and redirect
     localStorage.setItem('token',json.authtoken);
     navigate('/');
+    props.showAlert("Account created Successfully", "success")
   }
   else{
-    alert("Invalid Credentials")
+    props.showAlert("Invalid Details", "danger")
   }
 
 
@@ -35,7 +36,7 @@ const Signup = () => {
 }
   return (
     <div className='container'>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='my-3'>
       <div className="mb-3">
           <label htmlFor="name" className="form-label">Name</label>
           <input type="text" className="form-control" id="name" name="name"  onChange={onChange} aria-describedby="emailHelp" />
