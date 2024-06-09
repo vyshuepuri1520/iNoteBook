@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const mongoURL = "mongodb+srv://omkar:omkar@cluster0.2eqx9us.mongodb.net/ultimateCodeVizard"
+const mongoURL = "mongodb+srv://vyshu:vyshu@cluster0.x9qv3v3.mongodb.net/"
 mongoose.set("strictQuery", false);
 
 async function connecToMongo() {
