@@ -22,7 +22,9 @@
     "start:backend": "cd backend && npm start",
     "dev:frontend" : "npm i",
     "dev:backend":"cd backend && npm i",
-    "dev":"npm run dev:frontend && npm run dev:backend"
+    "dev":"npm run dev:frontend && npm run dev:backend",
+    "om":"npm i",
+    "sai":"npm start"
   },
   "eslintConfig": {
     "extends": [
