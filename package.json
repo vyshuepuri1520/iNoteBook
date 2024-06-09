@@ -20,7 +20,9 @@
     "eject": "react-scripts eject",
     "both" : "concurrently \"npm run start\" \"npm run start:backend\"",
     "start:backend": "cd backend && npm start",
-    "dev" : "npm i"
+    "dev:frontend" : "npm i",
+    "dev:backend":"cd backend && npm i",
+    "dev":"npm run dev:frontend && npm run dev:backend"
   },
   "eslintConfig": {
     "extends": [
