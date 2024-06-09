@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "inotebook - Your notebook is on cloud",
   "main": "index.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
@@ -16,7 +17,8 @@
     "express": "^4.19.2",
     "express-validator": "^7.0.1",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.3.3"
+    "mongoose": "^8.3.3",
+    "react-scripts": "5.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
