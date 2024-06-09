@@ -16,7 +16,7 @@ app.use('/api/notes', require('./routes/notes'))
 
 app.get('/',(req,res) =>{
   res.send("iNotebook");
-}
+})
 
 app.listen(port, () => {
   console.log(`iNotebook backend is listening on port http://localhost:${port}`)
