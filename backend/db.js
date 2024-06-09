@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const mongoURL = "mongodb+srv://vyshu:vyshu@cluster0.x9qv3v3.mongodb.net/"
+const mongoURL = "mongodb+srv://vyshu:vyshu@cluster0.x9qv3v3.mongodb.net/inotebook"
 mongoose.set("strictQuery", false);
 
 async function connecToMongo() {
